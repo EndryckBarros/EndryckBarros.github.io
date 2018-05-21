@@ -9,35 +9,188 @@
      <link rel="stylesheet" href="./css/materialize.min.css">
      <!--Let browser know website is optimized for mobile-->
      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-     <script type="text/javascript" src="javascript.js"></script>
-   </head>
+    </head>
 <body>
 
-	<nav class="grey darken-3">
-          <div class="nav-wrapper">
-            <a href="#" class="brand-logo">
-              <img class="responsive-img" style="max-width: 62px" src="./img/logo.png"></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">
-               menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Portfólio</a></li>
-              <li><a href="#">Repositórios</a></li>
-              <li><a href="#">Contato</a></li>
-            </ul>
-          </div>
-        </nav>
+	<style type="text/css">
+		.transparentBG {
+  			background-color: rgba(0,0,0,0);
+		}
+
+		.menu {
+		  position: fixed;
+		  right: 0;
+		  background-color: rgba(0,0,0,0);
+		  /*margin-top: -2.5em;*/
+		}
+
+		.slider{ 	
+			position: absolute !important;
+			top: 60px;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			min-height: 90%;
+		}
+
+		.bg-large{
+			padding-top: 200px !important;
+			padding-bottom: 200px !important;
+		}
+
+		.bg-small{
+			padding-top: 100px !important;
+			padding-bottom: 100px !important;
+		}
+
+		p{
+			font-size: large;
+			margin-top: 40px;
+		}
+
+		h3.a {
+    		font-family: "Mistral";
+    		font-weight: bold;
+		}
+
+		a.a {
+			font-family: "Bradley Hand ITC";
+			font-size: large;
+    		font-weight: bold;
+    		color: white;
+		}
+
+		.bg-primary {
+		    background-color: #4292BF !important;
+		}
+
+	@media (min-width: 200px) {
+    .login-page
+{
+    background-image: linear-gradient(to bottom, 
+    rgba(168, 168, 168, 0.7) 0%,rgba(168, 168, 168, 0.7) 50%),
+    url('./img/backCel.jpeg');
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    
+    right: 0;
+    text-align: center;
+    top: 4.1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+}
+
+@media (min-width: 301px) {
+  .login-page
+{
+    background-image: linear-gradient(to bottom, 
+    rgba(168, 168, 168, 0.7) 0%,rgba(168, 168, 168, 0.7) 50%),
+    url('./img/back1.jpg');
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    
+    right: 0;
+    text-align: center;
+    top: 4.1em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+}
+
+@media (min-width: 1000px) {
+   .login-page
+{
+    background-image: linear-gradient(to bottom, 
+    rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.7) 50%),
+    url('./img/back3.jpg');
+    opacity: 1;
+    background-repeat: no-repeat;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    right: 0;
+    text-align: center;
+    top: 4.2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+}
+	</style>
+
+	<body>
+		<nav id="mainNav" class="menu">
+	       <div class="nav-wrapper nav-fixed">
+	         <a href="#" class="brand-logo">
+	           <img class="responsive-img" style="max-width: 62px" src="./img/logo.png"></a>
+	         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">
+	            menu</i></a>
+	         <ul class="right hide-on-med-and-down">
+	           <li><a class="a" href="#">HOME</a></li>
+	           <li><a class="a" href="#">SOBRE</a></li>
+	           <li><a class="a" href="#">PORTFÓLIO</a></li>
+	           <li><a class="a" href="#">REPOSITÓRIOS</a></li>
+	           <li><a class="a" href="#">CONTATO</a></li>
+	         </ul>
+	       </div>
+	    </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Portfólio</a></li>
-        <li><a href="#">Repositórios</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">SOBRE</a></li>
+        <li><a href="#">PORTFÓLIO</a></li>
+        <li><a href="#">REPOSITÓRIOS</a></li>
+        <li><a href="#">CONTATO</a></li>
       </ul>
+   	
+   		<div id="bg1" class="login-page bg-large">
+   			<h3 id="123" class="white-text col l6 s8 header a">ENDRYCK BARROS</h3>
+         	<p class="white-text col l6 s8">Estudante Universitário, Desenvolvedor de Sistemas e Designer Gráfico.</p>
+   		</div>
 
+   		<section class="bg-primary bg-small">
+	   		<div class="row container">
+	   			<div class="row">
+	                <div class="col l10">
+	                    <h4 class="white-text">Sobre</h4>
+	                    <hr class="light">
+	                    <p class="white-text">
+	                        •	Superior em Análise e Desenvolvimento de Sistemas. UNIVERSIDADE POSITIVO, (Cursando) Conclusão em 2018.
+	                    </p>
+	                    <p class="white-text">
+	                        •	Técnico em Logística, LAMENHA LINS.
+	                    </p>
 
+	                    <p class="white-text mb-4">
+	                        •	Informática – Windows, Android, Microsoft Office, Designer Gráfico e Web Designer. MEGABYTE.
+	                    </p>
+	                    <p class="white-text">
+	                        •	Introdução a Pintura Digital, UDEMY.
+	                    </p>
+                	</div>
+	   			</div>
+	   		</div>
+   		</section>
+   
+
+   </body>
 
 	<!--JavaScript at end of body for optimized loading-->
     <script src="./js/jquery.js"></script>
@@ -49,5 +202,36 @@
 	      $('.sidenav').sidenav();
 	    });
     </script>
+
+    <script type="text/javascript">
+    	$(window).on('resize', function() {
+		  var win = $(this);
+		  if (win.width() <= 300) {
+
+		    $('#123').addClass('black-text');
+		    $('#123').removeClass('white-text');
+		    $('#bg1').addClass('bg-small');
+		    $('#bg1').removeClass('bg-large');
+
+		  } else {
+		    $('#123').addClass('white-text');
+		    $('#123').removeClass('black-text');
+		    
+		  }
+
+		  if (win.width() <= 430) {
+		    $('#bg1').addClass('bg-small');
+		    $('#bg1').removeClass('bg-large');
+		  }else{
+		  	$('#bg1').addClass('bg-large');
+		    $('#bg1').removeClass('bg-small');
+		  }
+		});
+    </script>
+
+    
 </body>
 </html>
+
+ 
+
